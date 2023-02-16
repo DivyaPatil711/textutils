@@ -35,39 +35,33 @@ function App() {
   };
   return (
     <>
-     {/* <Navbar
-          title="TextUtils"
-          aboutText="About"
-          mode={mode}
-          toggleMode={toggleMode}
-        />
+        <Navbar title="TextUtils" aboutText="About" mode={mode} toggleMode={toggleMode}/>
         <Alert alert={alert} />
-      <Router>
        
-        {/* <div className="container my-3"> */}
+      <Router>
+         <div className="container my-3">
           <Switch>
-            <Route>
+            <Route path="/TextForm">
               <TextForm
-                // heading="Enter the text to analyze below"
-                // mode={mode}
-                // showAlert={showAlert}
-              />
+                heading="Enter the text to analyze below"
+                mode={mode}
+                showAlert={showAlert} /> 
             </Route>
-            <Route path="/about">
+            <Route path="/About">
               <About />
             </Route>
-            {/* <Route exact path="/" component={TextForm} />
-            <Route exact path="/about" component={About} /> */}
+            {/* <Route exact path="/" component={TextForm} /> */}
+            {/* <Route exact path="/about" component={About} /> */}
           </Switch>
-        {/* </div>
-      </Router> */}
-       <Navbar title="TextUtils" aboutText="About" mode={mode} toggleMode={toggleMode}/>
-     <Router>
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-    </Switch>
-  </Router> 
+        </div>
+      </Router>
+     {/* <Router> */}
+    {/* <Switch> */}
+      {/* <Route exact path="/" component={Home} /> */}
+      {/* <Route path="/about" component={About} /> */}
+    {/* </Switch> */}
+  {/* </Router>   */}
+  
     </>
   );
 }
